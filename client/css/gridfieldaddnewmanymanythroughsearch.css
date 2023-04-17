@@ -1,0 +1,31 @@
+/**
+ * GridFieldAddExistingSearchButton
+ */
+
+.add-new-manymanythrough-search-dialog {
+  min-width: inherit !important;
+}
+
+.add-new-manymanythrough-search-dialog .add-new-manymanythrough-search-form .field {
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.add-new-manymanythrough-search-dialog .add-new-manymanythrough-search-form .field label {
+  padding: 4px 0;
+}
+
+.add-new-manymanythrough-search-dialog .add-new-manymanythrough-search-form .Actions {
+  margin-top: 10px;
+  padding: 0;
+}
+
+.add-new-manymanythrough-search-dialog .list-group-item {
+  min-height: 32px;
+}
+
+.add-new-manymanythrough-search-dialog .btn-toolbar {
+  margin-top: 12px;
+}
