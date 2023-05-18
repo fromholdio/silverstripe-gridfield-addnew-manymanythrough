@@ -7,6 +7,7 @@ use SilverStripe\Forms\GridField\GridField_URLHandler;
 use SilverStripe\ORM\ManyManyThroughList;
 use SilverStripe\ORM\ManyManyThroughQueryManipulator;
 use SilverStripe\ORM\SS_List;
+use SilverStripe\ORM\UnsavedRelationList;
 use SilverStripe\View\ArrayData;
 use SilverStripe\View\Requirements;
 
@@ -29,7 +30,7 @@ class GridFieldAddNewManyManyThroughSearchButton implements GridField_HTMLProvid
     ];
 
     public function __construct(
-        ManyManyThroughList $joinList,
+        ManyManyThroughList|UnsavedRelationList $joinList,
         SS_List $searchList,
         array $searchFields = ['Title'],
         string $resultFormat = 'Title',
@@ -118,13 +119,13 @@ class GridFieldAddNewManyManyThroughSearchButton implements GridField_HTMLProvid
         return $this->fragment;
     }
 
-    public function setJoinList(ManyManyThroughList $list): self
+    public function setJoinList(ManyManyThroughList|UnsavedRelationList $list): self
     {
         $this->joinList = $list;
         return $this;
     }
 
-    public function getJoinList(): ManyManyThroughList
+    public function getJoinList(): ManyManyThroughList|UnsavedRelationList
     {
         return $this->joinList;
     }
