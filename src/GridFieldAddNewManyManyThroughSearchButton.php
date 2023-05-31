@@ -24,6 +24,7 @@ class GridFieldAddNewManyManyThroughSearchButton implements GridField_HTMLProvid
     protected array $searchFields;
     protected SS_List $searchList;
     protected ?array $gridFieldReloadList;
+    protected ManyManyThroughList|UnsavedRelationList $joinList;
 
     private static $allowed_actions = [
         'handleSearch'
