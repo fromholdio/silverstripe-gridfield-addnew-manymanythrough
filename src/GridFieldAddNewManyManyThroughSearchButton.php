@@ -35,11 +35,11 @@ class GridFieldAddNewManyManyThroughSearchButton implements GridField_HTMLProvid
         SS_List $searchList,
         array $searchFields = ['Title'],
         string $resultFormat = 'Title',
-        array $extraData = null,
+        ?array $extraData = null,
         bool $doAllowDuplicate = false,
         $fragment = 'buttons-before-left',
         string $buttonClass = 'btn-outline-primary',
-        string $buttonName = null
+        ?string $buttonName = null
     ) {
         $this->setJoinList($joinList);
         $this->setButtonClass($buttonClass);
