@@ -6,9 +6,9 @@ use SilverStripe\Forms\GridField\GridField_HTMLProvider;
 use SilverStripe\Forms\GridField\GridField_URLHandler;
 use SilverStripe\ORM\ManyManyThroughList;
 use SilverStripe\ORM\ManyManyThroughQueryManipulator;
-use SilverStripe\ORM\SS_List;
+use SilverStripe\Model\List\SS_List;
 use SilverStripe\ORM\UnsavedRelationList;
-use SilverStripe\View\ArrayData;
+use SilverStripe\Model\ArrayData;
 use SilverStripe\View\Requirements;
 
 class GridFieldAddNewManyManyThroughSearchButton implements GridField_HTMLProvider, GridField_URLHandler
